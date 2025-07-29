@@ -1,0 +1,21 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node assignment2/app.js", 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chatbot":"node question3/app.js",
+    "compress":"node question4/app.js",
+    "extract":"node question5/app.js"
+  },
+  "author": "",
+  "licens e": "ISC",
+  "description": "",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "unzipper": "^0.12.3"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Index Page fetch using ajax</title>
+    <script>
+    $(document).ready(function(){
+        $("#txtBtn").click(()=>
+        {
+            $.ajax({
+                type:"GET",
+                method:"GET",
+                url:"http://localhost:8000/gethello",
+                success:(data)=>{
+                    $("#txt").html(data);
+                },
+                error:(err)=>{
+                    console.log(err);
+                    
+                }
+            });
+        })
+    });
+    </script>
+</head>
+<body>
+<h1>Fetch data</h1>
+<button type="button" id="txtBtn" name="txtBtn" class="btn btn-primary">Fetch Data Using Ajax</button>
+<p id="txt"></p>
+</body>
+</html>
